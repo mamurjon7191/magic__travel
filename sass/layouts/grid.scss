@@ -1,0 +1,12 @@
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  transform: skewY(5deg);
+  gap: 5rem;
+}

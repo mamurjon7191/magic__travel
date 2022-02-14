@@ -1,0 +1,29 @@
+.card--info-- {
+  background-color: #eee;
+  height: 40vh;
+  padding: 3rem 2rem;
+  text-align: center;
+  opacity: 0.8;
+  box-shadow: 0 1.5rem 3rem rgba(#000000, 0.3);
+  transition: 0.5s all;
+  &:hover {
+    transform: translate(0, -5%) scale(1.04);
+  }
+  i {
+    font-size: 5rem;
+    background-image: linear-gradient(to left, $MediumGreen, $LightGreen);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 1rem;
+  }
+  h1 {
+    margin-top: 2rem;
+    opacity: 0.8;
+  }
+  p {
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+}

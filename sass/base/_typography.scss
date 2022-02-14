@@ -1,0 +1,63 @@
+.header--title1 {
+  font-size: 5rem;
+  letter-spacing: 4rem;
+  font-weight: 500;
+  animation: titleH1 1s linear;
+}
+.header--title2 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-top: 1rem;
+  letter-spacing: 1rem;
+  animation: titleH2 1s linear;
+}
+.info__tour--tittle {
+  &--1 {
+    transition: 0.1s all;
+    background-image: linear-gradient(to left, $MediumGreen, $LightGreen);
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    &:hover {
+      transform: skew(10deg, 1.5deg) scale(1.1);
+      text-shadow: 0 1.5rem 3rem rgba(#000000, 0.3);
+    }
+  }
+}
+.info__tour-- {
+  margin-top: 10rem;
+  margin-left: 20%;
+  text-align: left;
+  opacity: 0.5;
+  .meta {
+    margin-bottom: 3rem;
+  }
+  &1 {
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    p {
+      line-height: 2;
+      font-size: 1.6rem;
+    }
+  }
+  &btn {
+    margin-top: 2rem;
+    a {
+      font-size: 1.6rem;
+      @include link;
+      color: red;
+      border-bottom: 2px solid green;
+      padding: 0.5rem;
+      transition: all 0.5s;
+      &:hover {
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+}
