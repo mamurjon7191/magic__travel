@@ -1,0 +1,131 @@
+.popular__tours-- {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s;
+  perspective: 10000px;
+  &main {
+    position: relative;
+    .img {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      width: 100%;
+      background-size: cover;
+      height: 25vh;
+      background-repeat: no-repeat;
+    }
+    .img1 {
+      background-image: linear-gradient(
+          to top left,
+          rgba(255, 166, 0, 0.486),
+          rgba(255, 255, 0, 0.596)
+        ),
+        url(/img/nat-1.jpg);
+    }
+    .img2 {
+      background-image: linear-gradient(
+          to top left,
+          rgba(255, 166, 0, 0.486),
+          rgba(82, 82, 41, 0.329)
+        ),
+        url(/img/nat-2.jpg);
+    }
+    .img3 {
+      background-image: linear-gradient(
+          to top left,
+          rgba(87, 89, 187, 0.226),
+          rgba(30, 29, 116, 0.267)
+        ),
+        url(/img/nat-1.jpg);
+    }
+
+    h1 {
+      background-image: linear-gradient(
+        to top left,
+        rgba(255, 166, 0, 0.486),
+        rgba(255, 255, 0, 0.815)
+      );
+      position: absolute;
+      top: 60%;
+      right: 5%;
+      color: white;
+      font-weight: 500;
+      padding: 2rem;
+      padding-left: 4rem;
+    }
+    .m--2 {
+      background-image: linear-gradient(
+        to top left,
+        rgba(255, 166, 0, 0.486),
+        rgba(82, 82, 41, 0.329)
+      );
+    }
+    .m--3 {
+      background-image: linear-gradient(
+        to top left,
+        rgba(87, 89, 187, 0.226),
+        rgba(30, 29, 116, 0.267)
+      );
+    }
+  }
+  h2 {
+    line-height: 4rem;
+  }
+  height: 60vh;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 1.5rem 3rem rgba($color: #000000, $alpha: 0.4);
+  .front__side {
+    z-index: 101;
+    background-color: white;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .back__side {
+    transform: rotateY(180deg);
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to top left,
+      rgb(255, 255, 0),
+      rgb(126, 231, 40)
+    );
+
+    h1 {
+      font-size: 5rem;
+      margin-top: 5rem;
+    }
+    h3 {
+      margin-top: 40%;
+      font-size: 2rem;
+    }
+    button {
+      margin-top: 5rem;
+      @include btn;
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        top: 0;
+        left: 0;
+        border-radius: 2rem;
+        opacity: 0;
+        &:hover {
+          transform: scale(1.1);
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}
+// .container:hover .popular__tours--1 {
+//   transform: rotateY(180deg);
+// }

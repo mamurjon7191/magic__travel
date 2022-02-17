@@ -1,7 +1,19 @@
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin-top: 5rem;
+  gap: 3rem;
 }
 .grid4 {
   display: grid;

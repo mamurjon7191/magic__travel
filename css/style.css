@@ -64,6 +64,93 @@ body {
         background-color: green;
         color: white; }
 
+.popular__tours--title {
+  text-align: center; }
+  .popular__tours--title h1 {
+    transition: 0.1s all;
+    background-image: linear-gradient(to left, #55c57a, #7ed56f);
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    margin-top: 10rem; }
+    .popular__tours--title h1:hover {
+      transform: skew(10deg, 1.5deg) scale(1.1);
+      text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+
+.popular__tours--title {
+  text-align: center; }
+  .popular__tours--title h1 {
+    transition: 0.1s all;
+    background-image: linear-gradient(to left, #55c57a, #7ed56f);
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    margin-top: 10rem; }
+    .popular__tours--title h1:hover {
+      transform: skew(10deg, 1.5deg) scale(1.1);
+      text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+
+.section--story--title {
+  text-align: center;
+  margin-top: 5rem; }
+  .section--story--title h1 {
+    transition: 0.1s all;
+    background-image: linear-gradient(to left, #55c57a, #7ed56f);
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5rem;
+    font-size: 3rem; }
+    .section--story--title h1:hover {
+      transform: skew(10deg, 1.5deg) scale(1.1);
+      text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+
+.footer1 {
+  border-top: 2px solid white;
+  width: 88.1%;
+  padding-top: 3rem; }
+  .footer1 h1 {
+    display: inline-block;
+    margin-right: 1rem;
+    transition: 0.4s all; }
+    .footer1 h1:hover {
+      color: green;
+      cursor: pointer;
+      transform: skewY(5deg) scale(1.1);
+      background-color: #333;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
+
+.footer2 {
+  border-top: 2px solid white;
+  width: 80%;
+  padding-top: 3rem;
+  font-size: 1.6rem;
+  margin-left: 10rem;
+  line-height: 1.6; }
+
+.popup__right {
+  text-align: left;
+  margin-top: 5rem; }
+  .popup__right h1 {
+    transition: 0.1s all;
+    background-image: linear-gradient(to left, #55c57a, #7ed56f);
+    -webkit-background-clip: text;
+    display: inline-block;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5rem;
+    font-size: 3rem; }
+    .popup__right h1:hover {
+      transform: skew(10deg, 1.5deg) scale(1.1);
+      text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+
 @keyframes titleBtn {
   0% {
     transform: translate(0, 200%);
@@ -91,12 +178,167 @@ body {
 .u-text-center {
   text-align: center; }
 
+.container1 {
+  max-width: 114rem; }
+
 .header--title--btn {
   margin-top: 4rem;
   padding: 1.5rem 2rem;
   border-radius: 2rem;
   border: none;
   animation: titleBtn 1s linear; }
+
+.popular__tours-- {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s;
+  perspective: 10000px;
+  height: 60vh;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
+  .popular__tours--main {
+    position: relative; }
+    .popular__tours--main .img {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      width: 100%;
+      background-size: cover;
+      height: 25vh;
+      background-repeat: no-repeat; }
+    .popular__tours--main .img1 {
+      background-image: linear-gradient(to top left, rgba(255, 166, 0, 0.486), rgba(255, 255, 0, 0.596)), url(/img/nat-1.jpg); }
+    .popular__tours--main .img2 {
+      background-image: linear-gradient(to top left, rgba(255, 166, 0, 0.486), rgba(82, 82, 41, 0.329)), url(/img/nat-2.jpg); }
+    .popular__tours--main .img3 {
+      background-image: linear-gradient(to top left, rgba(87, 89, 187, 0.226), rgba(30, 29, 116, 0.267)), url(/img/nat-1.jpg); }
+    .popular__tours--main h1 {
+      background-image: linear-gradient(to top left, rgba(255, 166, 0, 0.486), rgba(255, 255, 0, 0.815));
+      position: absolute;
+      top: 60%;
+      right: 5%;
+      color: white;
+      font-weight: 500;
+      padding: 2rem;
+      padding-left: 4rem; }
+    .popular__tours--main .m--2 {
+      background-image: linear-gradient(to top left, rgba(255, 166, 0, 0.486), rgba(82, 82, 41, 0.329)); }
+    .popular__tours--main .m--3 {
+      background-image: linear-gradient(to top left, rgba(87, 89, 187, 0.226), rgba(30, 29, 116, 0.267)); }
+  .popular__tours-- h2 {
+    line-height: 4rem; }
+  .popular__tours-- .front__side {
+    z-index: 101;
+    background-color: white;
+    height: 100%;
+    backface-visibility: hidden; }
+  .popular__tours-- .back__side {
+    transform: rotateY(180deg);
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top left, yellow, #7ee728); }
+    .popular__tours-- .back__side h1 {
+      font-size: 5rem;
+      margin-top: 5rem; }
+    .popular__tours-- .back__side h3 {
+      margin-top: 40%;
+      font-size: 2rem; }
+    .popular__tours-- .back__side button {
+      margin-top: 5rem;
+      border: none;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      position: relative; }
+      .popular__tours-- .back__side button::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        top: 0;
+        left: 0;
+        border-radius: 2rem;
+        opacity: 0; }
+        .popular__tours-- .back__side button::after:hover {
+          transform: scale(1.1);
+          opacity: 0; }
+  .popular__tours--:hover {
+    transform: rotateY(180deg); }
+
+.section__book-1 {
+  height: 100%;
+  background-image: linear-gradient(105deg, #ffffffbb 0%, #ffffffbb 50%, transparent 50%), url(/img/nat-10.jpg);
+  background-size: cover; }
+
+.popup {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  border: 1px solid red;
+  height: 100vh;
+  width: 100%;
+  padding: 10rem;
+  background-color: rgba(0, 0, 0, 0.274);
+  z-index: 99999999999999999999999999999999; }
+  .popup__left {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .popup__content {
+    position: absolute;
+    border: 1px solid red;
+    background-color: white;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s cubic-bezier(0, 5.38, 1, 1.21); }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible; }
+  .popup img {
+    width: 100%; }
+  .popup__right--main {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem; }
+    .popup__right--main-1 {
+      width: 90%; }
+      .popup__right--main-1 p {
+        line-height: 2;
+        opacity: 0.6;
+        font-size: 1.6rem; }
+  .popup__right h2 {
+    margin-top: 3rem;
+    opacity: 0.6;
+    margin-bottom: 1rem; }
+  .popup__right--btn {
+    margin-top: 4rem;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 128, 0, 0.678);
+    color: white; }
+
+.popup__right--close--btn {
+  padding: 1rem 1.5rem;
+  border-radius: 50%; }
+  .popup__right--close--btn:active {
+    opacity: 0;
+    visibility: hidden; }
 
 .info__tour--img {
   margin-top: 7rem;
@@ -150,10 +392,91 @@ body {
     line-height: 1.8;
     font-size: 1.2rem; }
 
+.section--story {
+  position: relative;
+  width: 100%; }
+  .section--story--title {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    width: 100%; }
+  .section--story .orta {
+    display: flex;
+    justify-content: center; }
+  .section--story .orta1 {
+    display: flex;
+    justify-content: center;
+    background-blend-mode: c; }
+  .section--story- {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin-top: 20rem;
+    width: 70%;
+    height: 30vh;
+    transform: skew(-15deg); }
+    .section--story-:hover .section--story--img {
+      filter: blur(2px);
+      transition: 1s all; }
+    .section--story-:hover .section--story-name {
+      top: 45%;
+      left: 9%;
+      opacity: 1;
+      transition: 1s all; }
+    .section--story-name {
+      opacity: 0;
+      position: absolute;
+      top: 70%;
+      left: 11%;
+      color: white;
+      font-size: 2rem; }
+    .section--story- > * {
+      transform: skew(15deg); }
+    .section--story-bottom {
+      margin-top: 60rem; }
+    .section--story--img img {
+      border-radius: 50%;
+      width: 20%;
+      clip-path: circle(40% at 50% 50%);
+      float: left;
+      margin-top: 5rem;
+      shape-outside: circle(40% at 50% 50%);
+      margin-right: 5rem; }
+    .section--story--info {
+      margin-top: 6rem;
+      font-size: 1.4rem;
+      opacity: 0.5;
+      line-height: 1.6; }
+  .section--story--video {
+    position: absolute;
+    z-index: -1000;
+    opacity: 0.15; }
+
+.footer {
+  height: 50vh;
+  background-color: #333;
+  color: white;
+  padding: 5% 10%; }
+  .footer .footer--img {
+    text-align: center;
+    margin-bottom: 5rem; }
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center; }
+
 .grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between; }
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin-top: 5rem;
+  gap: 3rem; }
 
 .grid4 {
   display: grid;
@@ -174,6 +497,116 @@ body {
   .header .header--title--img {
     max-width: 10%; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__btn {
+  background-color: white;
+  border-radius: 50%;
+  height: 7rem;
+  position: fixed;
+  width: 7rem;
+  cursor: pointer;
+  text-align: center;
+  z-index: 900;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  right: 7rem;
+  top: 7rem; }
+
+.navigation__background {
+  top: 7.5rem;
+  z-index: 800;
+  height: 6rem;
+  right: 7rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  background-image: radial-gradient(#05a836, #5ce95c);
+  transition: all 0.5s; }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(50); }
+
+.navigation__checkbox:checked ~ .navigation__menu {
+  width: 100%; }
+
+.navigation__menu {
+  position: fixed;
+  height: 100vh;
+  z-index: 850;
+  top: 0;
+  left: 0;
+  width: 0%; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  transition: all 1s cubic-bezier(0.77, 0.24, 0.35, 1.47);
+  opacity: 0; }
+
+.navigation__item {
+  margin: 2rem; }
+
+.navigation__link:visited, .navigation__link:link {
+  display: inline-block;
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%);
+  padding: 1rem;
+  background-size: 220%;
+  transition: 1s all; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  transform: translate(1rem);
+  color: green; }
+
+.navigation__checkbox:checked ~ .navigation__menu .navigation__list {
+  opacity: 1;
+  left: 50%; }
+
+.navigation__checkbox:checked + .navigation__btn .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__btn .navigation__icon::before {
+  transform: rotate(135deg);
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__btn .navigation__icon::after {
+  transform: rotate(-135deg);
+  top: -1rem; }
+
+.navigation__icon {
+  position: relative; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    width: 3rem;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    left: 0;
+    margin-top: 3.5rem;
+    transition: all 0.5s; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute; }
+  .navigation__icon::before {
+    margin-top: -1rem; }
+  .navigation__icon::after {
+    margin-top: 1rem; }
+
+.navigation__btn:hover .navigation__icon::before {
+  top: -0.2rem; }
+
+.navigation__btn:hover .navigation__icon::after {
+  top: 0.2rem; }
+
 .info__tour {
   background-color: #eee;
   padding-top: 30vh;
@@ -188,3 +621,17 @@ body {
   transform: skewY(-5deg);
   margin-top: -10vh;
   padding: 10%; }
+
+.popular__tours {
+  background-color: #eee;
+  padding: 10%;
+  width: 100%;
+  height: 140vh;
+  margin-top: -10vh; }
+
+.section__book {
+  padding: 18rem;
+  width: 100%;
+  height: 100vh;
+  margin-top: 108rem;
+  background-image: linear-gradient(to top left, #2db583, #7bd370); }
